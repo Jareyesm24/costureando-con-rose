@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costureando con Rose</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff9f5;
+      color: #333;
+    }
+    header {
+      background-color: #ffb6b9;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #ffe0e3;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery img, .catalog img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .social {
+      text-align: center;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #ffb6b9;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .store-button {
+      background-color: #ffb6b9;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #ffb6b9;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #ff9ea1;
+    }
+    .whatsapp-button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto 0;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Costureando con Rose</h1>
+    <p>Muñecos personalizados en paño lency para toda ocasión</p>
+  </header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#productos">Catálogo</a>
+    <a href="#tienda">Tienda en línea</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenidos a Costureando con Rose</h2>
+    <p>Creaciones hechas a mano con amor: navideños, Halloween, personajes de televisión y personalizados.</p>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <h2>Galería</h2>
+    <p>Aquí encontrarás algunas de nuestras creaciones favoritas:</p>
+    <img src="tu-imagen-1.jpg" alt="Muñeco 1">
+    <img src="tu-imagen-2.jpg" alt="Muñeco 2">
+    <img src="tu-imagen-3.jpg" alt="Muñeco 3">
+  </section>
+
+  <section id="productos" class="catalog">
+    <h2>Catálogo</h2>
+    <p>Conoce todos los modelos disponibles y encuentra el ideal para ti.</p>
+    <img src="producto-1.jpg" alt="Producto 1">
+    <img src="producto-2.jpg" alt="Producto 2">
+  </section>
+
+  <section id="tienda">
+    <h2>Tienda en línea</h2>
+    <p>Haz tu pedido directamente desde nuestra tienda en línea.</p>
+    <a class="store-button" href="#">Ir a la tienda</a>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres un muñeco personalizado? Escríbeme:</p>
+    <form action="mailto:tu-email@example.com" method="post" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="social">
+      <a href="https://www.instagram.com/costure_andoconrose" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+      </a>
+      <a class="whatsapp-button" href="https://wa.me/573001112233" target="_blank">Contáctame por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Costureando con Rose. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
